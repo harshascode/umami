@@ -9,9 +9,10 @@ export function DashboardPage() {
 
   return (
     <PageBody>
-      <Column margin="2">
-        <PageHeader title={formatMessage(labels.dashboard)}></PageHeader>
-      </Column>
+      <PageHeader
+        title={formatMessage(labels.dashboard)}
+        description="Welcome to your analytics dashboard"
+      />
     </PageBody>
   );
 }

@@ -24,15 +24,16 @@ export function PageHeader({
   return (
     <Grid
       columns={{ xs: '1fr', md: '1fr 1fr' }}
-      paddingY="6"
-      marginBottom="6"
+      paddingY={{ xs: '6', md: '8' }}
+      marginBottom={{ xs: '6', md: '8' }}
       border={showBorder ? 'bottom' : undefined}
+      gap={{ xs: '4', md: '6' }}
     >
-      <Column gap="2">
+      <Column gap={{ xs: '2', md: '3' }}>
         {label}
-        <Row alignItems="center" gap="3">
+        <Row alignItems="center" gap="4">
           {icon && (
-            <Icon size="md" color="muted">
+            <Icon size="lg" color="muted">
               {icon}
             </Icon>
           )}
@@ -50,7 +51,7 @@ export function PageHeader({
           </Text>
         )}
       </Column>
-      <Row justifyContent="flex-end" alignItems="center">
+      <Row justifyContent="flex-end" alignItems="flex-start" gap="3">
         {children}
       </Row>
     </Grid>

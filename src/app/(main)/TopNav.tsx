@@ -5,22 +5,21 @@ import { ProfileButton } from '@/components/input/ProfileButton';
 export function TopNav() {
   return (
     <Row
-      position="absolute"
+      position="sticky"
       top="0"
       alignItems="center"
       justifyContent="flex-end"
-      paddingY="2"
-      paddingX="3"
-      paddingRight="5"
+      paddingY={{ xs: '3', md: '4' }}
+      paddingX={{ xs: '4', md: '8' }}
       width="100%"
-      style={{ position: 'sticky', top: 0 }}
-      zIndex={1}
+      backgroundColor="2"
+      borderBottom="1px solid var(--base-color-4)"
+      zIndex={100}
+      gap="2"
     >
-      <Row alignItems="center" justifyContent="flex-end" backgroundColor="2" borderRadius>
-        <ThemeButton />
-        <LanguageButton />
-        <ProfileButton />
-      </Row>
+      <ThemeButton />
+      <LanguageButton />
+      <ProfileButton />
     </Row>
   );
 }

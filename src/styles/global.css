@@ -1,43 +1,92 @@
+/* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
 html,
 body {
-  font-family: var(--font-family), sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--font-color);
   font-size: var(--font-size);
   background-color: var(--base-color-2);
   width: 100%;
   min-height: 100vh;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html[style*="padding-right"] {
   padding-right: 0 !important;
 }
 
+/* Typography hierarchy */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+p {
+  line-height: 1.5;
+}
+
 a,
 a:active,
 a:hover {
-  color: var(--font-color);
+  color: var(--primary-color);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* Modern scrollbar styling */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
+  height: 8px;
   background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  border: 7px solid rgba(0, 0, 0, 0);
-  background-color: var(--base-color-4);
-  background-clip: padding-box;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 7px solid rgba(0, 0, 0, 0);
-  background-color: var(--base-color-9);
-  border-radius: var(--border-radius-full);
+  background-color: rgba(255, 105, 180, 0.4);
+  border-radius: 4px;
   background-clip: padding-box;
+  border: 2px solid transparent;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  border: 4px solid rgba(0, 0, 0, 0);
+  background-color: rgba(255, 105, 180, 0.6);
   background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(255, 105, 180, 0.2);
+  color: inherit;
+}
+
+/* Focus-visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }

@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 428 389.11"><circle cx="214.15" cy="181" r="171" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="20"/><path d="M413 134.11H15.29a15 15 0 0 0-15 15v15.3C.12 168 0 171.52 0 175.11c0 118.19 95.81 214 214 214 116.4 0 211.1-92.94 213.93-208.67 0-.44.07-.88.07-1.33v-30a15 15 0 0 0-15-15Z" fill="#fff"/></svg>
+<svg fill="none" stroke="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Left Ear -->
+  <ellipse cx="60" cy="45" rx="18" ry="50" fill="white" transform="rotate(-25 60 45)"/>
+  <!-- Right Ear -->
+  <ellipse cx="140" cy="45" rx="18" ry="50" fill="white" transform="rotate(25 140 45)"/>
+  <!-- Inner Left Ear -->
+  <ellipse cx="60" cy="50" rx="10" ry="35" fill="#FFB6D9" transform="rotate(-25 60 50)"/>
+  <!-- Inner Right Ear -->
+  <ellipse cx="140" cy="50" rx="10" ry="35" fill="#FFB6D9" transform="rotate(25 140 50)"/>
+  <!-- Head -->
+  <circle cx="100" cy="110" r="65" fill="white"/>
+  <!-- Face -->
+  <circle cx="100" cy="115" r="55" fill="white"/>
+  <!-- Left Eye -->
+  <circle cx="80" cy="100" r="8" fill="#333333"/>
+  <circle cx="82" cy="98" r="3" fill="white"/>
+  <!-- Right Eye -->
+  <circle cx="120" cy="100" r="8" fill="#333333"/>
+  <circle cx="122" cy="98" r="3" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="100" cy="115" rx="6" ry="8" fill="#FFB6D9"/>
+  <!-- Mouth -->
+  <path d="M 100 115 Q 90 125 85 122" stroke="#333333" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 100 115 Q 110 125 115 122" stroke="#333333" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Cheeks -->
+  <circle cx="60" cy="110" r="8" fill="#FFB6D9" opacity="0.5"/>
+  <circle cx="140" cy="110" r="8" fill="#FFB6D9" opacity="0.5"/>
+  <!-- Front Paws -->
+  <rect x="75" y="150" width="15" height="25" rx="7" fill="white"/>
+  <rect x="110" y="150" width="15" height="25" rx="7" fill="white"/>
+</svg>

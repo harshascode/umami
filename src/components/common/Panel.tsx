@@ -37,18 +37,34 @@ export function Panel({ title, allowFullscreen, style, children, ...props }: Pan
 
   return (
     <Column
-      paddingY="6"
-      paddingX={{ xs: '3', md: '6' }}
+      paddingY={{ xs: '6', md: '8' }}
+      paddingX={{ xs: '4', md: '8' }}
       border
-      borderRadius="3"
+      borderRadius="2"
       backgroundColor
       position="relative"
-      gap
+      gap="4"
       {...props}
-      style={{ ...style, ...(isFullscreen ? fullscreenStyles : {}) }}
+      style={{
+        ...style,
+        ...(isFullscreen ? fullscreenStyles : {}),
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+      }}
     >
-      {title && <Heading>{title}</Heading>}
-      {allowFullscreen && (
+      {title && (
+        <Row justifyContent="space-between" alignItems="center" marginBottom="2">
+          <Heading size="2">{title}</Heading>
+          {allowFullscreen && (
+            <TooltipTrigger delay={0} isDisabled={isFullscreen}>
+              <Button size="sm" variant="quiet" onPress={handleFullscreen}>
+                <Icon>{isFullscreen ? <X /> : <Maximize />}</Icon>
+              </Button>
+              <Tooltip>{formatMessage(labels.maximize)}</Tooltip>
+            </TooltipTrigger>
+          )}
+        </Row>
+      )}
+      {!title && allowFullscreen && (
         <Row justifyContent="flex-end" alignItems="center">
           <TooltipTrigger delay={0} isDisabled={isFullscreen}>
             <Button size="sm" variant="quiet" onPress={handleFullscreen}>

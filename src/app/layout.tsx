@@ -7,6 +7,8 @@ import '@fontsource/inter/500.css';
 import '@fontsource/inter/700.css';
 import '@umami/react-zen/styles.css';
 import '@/styles/global.css';
+import '@/styles/professional.css';
+import '@/styles/refined.css';
 import '@/styles/variables.css';
 
 export default function ({ children }) {
@@ -26,7 +28,7 @@ export default function ({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FF69B4" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#2f2f2f" media="(prefers-color-scheme: dark)" />
@@ -43,7 +45,7 @@ export default function ({ children }) {
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Umami',
-    default: 'Umami',
+    template: '%s | SimpleAnalytics',
+    default: 'SimpleAnalytics',
   },
 };

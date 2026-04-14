@@ -31,9 +31,11 @@ export function PageBody({
     <Column
       {...props}
       width="100%"
-      paddingBottom="6"
+      paddingBottom="8"
+      paddingTop="6"
       maxWidth={maxWidth}
-      paddingX={{ xs: '3', md: '6' }}
+      paddingX={{ xs: '4', md: '8' }}
+      gap="6"
       style={{ margin: '0 auto' }}
     >
       {children}
